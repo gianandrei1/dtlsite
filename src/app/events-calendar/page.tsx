@@ -11,6 +11,7 @@ import event16 from "@/app/images/event16.jpg";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { StaticImageData } from 'next/image';
 
 // Mock event data
 const events = [
@@ -19,7 +20,7 @@ const events = [
     title: "Shakedown Sunday",
     date: "Sunday, May 1, 2025",
     time: "10:00 - 05:00",
-    image: event11.src,
+    image: event11,
     link: "/residency/black-coffee",
     room: "Theatre",
   },
@@ -28,7 +29,7 @@ const events = [
     title: "Saturday Socials",
     date: "Saturday, May 2, 2025",
     time: "10:00 - 05:00",
-    image: event12.src,
+    image: event12,
     link: "/residency/tale-of-us-present-afterlife",
     room: "Theatre",
   },
@@ -37,7 +38,7 @@ const events = [
     title: "Fridaze",
     date: "Friday, May 3, 2025",
     time: "10:00 - 05:00",
-    image: event13.src,
+    image: event13,
     link: "/residency/fisher",
     room: "Theatre",
   },
@@ -46,7 +47,7 @@ const events = [
     title: "Bacardi Night",
     date: "Thursday, May 4, 2025",
     time: "10:00 - 03:00",
-    image: event14.src,
+    image: event14,
     link: "/residency/glitterbox",
     room: "Theatre",
   },
@@ -55,7 +56,7 @@ const events = [
     title: "University Night",
     date: "Wednesday, May 5, 2025",
     time: "10:00 - 03:00",
-    image: event15.src,
+    image: event15,
     link: "/residency/eric-prydz",
     room: "Theatre",
   },
@@ -64,7 +65,7 @@ const events = [
     title: "University Night",
     date: "Wednesday, May 6, 2025",
     time: "10:00 - 03:00",
-    image: event16.src,
+    image: event16,
     link: "/residency/martinez-brothers",
     room: "Theatre",
   },
@@ -75,7 +76,7 @@ const juneevents = [
     title: "Shakedown Sunday",
     date: "Sunday, June 1, 2025",
     time: "10:00 - 05:00",
-    image: event11.src,
+    image: event11,
     link: "/residency/black-coffee",
     room: "Theatre",
   },
@@ -175,7 +176,7 @@ type EventProps = {
     title: string;
     date: string;
     time: string;
-    image: string | StaticImageData;
+    image: StaticImageData;
     link: string;
     room: string;
   };

@@ -19,7 +19,7 @@ const events = [
     title: "Shakedown Sunday",
     date: "Sunday, May 1, 2025",
     time: "10:00 - 05:00",
-    image: event11,
+    image: event11.src,
     link: "/residency/black-coffee",
     room: "Theatre",
   },
@@ -28,7 +28,7 @@ const events = [
     title: "Saturday Socials",
     date: "Saturday, May 2, 2025",
     time: "10:00 - 05:00",
-    image: event12,
+    image: event12.src,
     link: "/residency/tale-of-us-present-afterlife",
     room: "Theatre",
   },
@@ -37,7 +37,7 @@ const events = [
     title: "Fridaze",
     date: "Friday, May 3, 2025",
     time: "10:00 - 05:00",
-    image: event13,
+    image: event13.src,
     link: "/residency/fisher",
     room: "Theatre",
   },
@@ -46,7 +46,7 @@ const events = [
     title: "Bacardi Night",
     date: "Thursday, May 4, 2025",
     time: "10:00 - 03:00",
-    image: event14,
+    image: event14.src,
     link: "/residency/glitterbox",
     room: "Theatre",
   },
@@ -55,7 +55,7 @@ const events = [
     title: "University Night",
     date: "Wednesday, May 5, 2025",
     time: "10:00 - 03:00",
-    image: event15,
+    image: event15.src,
     link: "/residency/eric-prydz",
     room: "Theatre",
   },
@@ -64,7 +64,7 @@ const events = [
     title: "University Night",
     date: "Wednesday, May 6, 2025",
     time: "10:00 - 03:00",
-    image: event16,
+    image: event16.src,
     link: "/residency/martinez-brothers",
     room: "Theatre",
   },
@@ -75,7 +75,7 @@ const juneevents = [
     title: "Shakedown Sunday",
     date: "Sunday, June 1, 2025",
     time: "10:00 - 05:00",
-    image: event11,
+    image: event11.src,
     link: "/residency/black-coffee",
     room: "Theatre",
   },
@@ -175,7 +175,7 @@ type EventProps = {
     title: string;
     date: string;
     time: string;
-    image: string;
+    image: string | StaticImageData;
     link: string;
     room: string;
   };
